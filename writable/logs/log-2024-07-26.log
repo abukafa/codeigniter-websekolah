@@ -1,0 +1,796 @@
+ERROR - 2024-07-26 22:59:46 --> mysqli_sql_exception: No database selected in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+CRITICAL - 2024-07-26 22:59:46 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 22:59:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 22:59:46 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `profil`
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 22:59:49 --> mysqli_sql_exception: No database selected in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+CRITICAL - 2024-07-26 22:59:49 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 22:59:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 22:59:49 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `profil`
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:00:10 --> mysqli_sql_exception: No database selected in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+CRITICAL - 2024-07-26 23:00:10 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 23:00:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 23:00:10 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `profil`
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:04:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:04:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:04:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:05:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:05:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:05:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:05:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:05:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:05:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:05:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:05:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:05:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:05:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:06:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:06:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:06:43 --> Error connecting to the database: mysqli_sql_exception: Connection timed out in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection timed out in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:06:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection timed out
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 23:06:53 --> Error: Class "CodeIgniter\Database\mysql\Connection" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(57): CodeIgniter\Database\Database->initDriver('mysql', 'Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH/Controllers/Home.php(27): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 23:06:58 --> Error: Class "CodeIgniter\Database\mysql\Connection" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(57): CodeIgniter\Database\Database->initDriver('mysql', 'Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH/Controllers/Home.php(27): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+ERROR - 2024-07-26 23:07:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'u957492887_bugelan'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('156.67.222.1', 'u957492887_buge...', 'Admin*2023', 'u957492887_buge...', 3306, '', 0)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'36.74.40.110' (using password: YES) in /home/abukafa/Application/codeigniter-websekolah/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/abukafa/Application/codeigniter-websekolah/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/abukafa/Application/codeigniter-websekolah/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/abukafa/Application/codeigniter-websekolah/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/abukafa/Application/codeigniter-websekolah/app/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+#6 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/abukafa/Application/codeigniter-websekolah/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/abukafa/Application/codeigniter-websekolah/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/abukafa/Application/codeigniter-websekolah/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /home/abukafa/Application/codeigniter-websekolah/system/rewrite.php(44): require_once('/home/abukafa/A...')
+#13 {main}
+CRITICAL - 2024-07-26 23:07:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'36.74.40.110' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Home.php(73): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
+CRITICAL - 2024-07-26 23:20:15 --> Error: Call to undefined function uploaded()
+[Method: GET, Route: galeri]
+in APPPATH/Views/blog/galeri.php on line 24.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('blog/galeri', [], true)
+ 4 APPPATH/Controllers/Home.php(214): view('blog/galeri', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->galeri()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/home/abukafa/Application/codeigniter-websekolah/public/index.php')
